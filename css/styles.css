@@ -1,0 +1,272 @@
+/* styling the page */
+body {
+  /* margin: 0 1%; */
+  font-family: 'Montserrat', serif;
+}
+
+/* Set letter spacing for all H3's */
+h3 {
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+/* Style the horizontal rule */
+
+hr{
+  border: dotted #ff4c68 6px;
+  border-bottom: none;
+  width: 10%;
+  margin: 0 auto;
+}
+
+/* Set text align for all paragraphs in ALL pages to JUSTIFY */
+p {
+  text-align: justify;
+}
+
+/* Assigning color to the headers in the Branches dropdown menu in the navbar */
+.branch-id {
+  color: #ff4c68;
+  font-weight: bold;
+}
+
+/* Constraining the navbar to a fixed height */
+/* .navbar{
+  max-height: 55px ;
+} */
+/* change background color of theme section */
+#theme {
+  background-color: black;
+}
+
+.point-men-pix {
+  max-width: 100%;
+  height: auto;
+  margin-right: 2%;
+}
+
+/* Attach images to the home page carousel so they fill the whole carousel */
+
+.home-page-slide1 {
+  height: 550px;
+  background-image: url("../images/2020.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.home-page-slide2 {
+  height: 550px;
+  background-image: url("../images/home-page-slide 1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-page-slide3 {
+  height: 550px;
+  background-image: url("../images/home-page-slide 2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 3% 3%;
+}
+
+/* Style the names of bishop and mummy so they stand out */
+.names {
+  font-weight: bold;
+}
+
+/* Change text alignment for biography of OUR POINT MEN and also church vision in ABOUT US page */
+.biography, .church-vision-mission .about-biography {
+  font-family: 'Merriweather', serif;
+}
+
+/* Featured message */
+#featured-message {
+  text-align: center;
+  background-color: gray;
+  color: #fff;
+}
+
+/* Testimonials */
+#testimonials {
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #ff4c68;
+  text-align: center;
+  color: #fff;
+}
+
+.testifier {
+  font-family: "Montserrat-bold", serif;
+  text-align: justify;
+  /* line-height: 1.5;
+  font-size: 3rem; */
+}
+
+.testifier-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 2%;
+}
+
+.carousel-item {
+  padding: 7% 10%;
+}
+
+.testimony-slide {
+  height: 10%;
+}
+
+#going-to-heaven-question{
+  background-color: white;
+  text-align: center;
+}
+
+/* Adjust positions of items in contact us section */
+.resources {
+  padding-left: 10%;
+}
+
+.footer-logo {
+  text-align: right;
+}
+
+/* contact-us */
+/* Footer */
+#footer {
+  color: white;
+  text-align: center;
+  font-size: 70%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  background-color: #ff4c68;
+}
+
+/* styling the about-us page */
+.who-we-are, #header {
+  background-color: black;
+  color: white;
+}
+
+.about-paragraphs {
+  font-family: 'Ubuntu', serif;
+  font-size: 150%;
+}
+
+#church-vision-mission {
+  background-color: gray;
+  color: white;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 18px;
+  text-align: justify;
+}
+
+#lead-pastors, .bishop-mummy-pix {
+  background-color: #ff4c68;
+}
+
+.about-biography{
+  font-size: 120%;
+  color: white;
+}
+
+.bishop-mummy-pix {
+  max-width: 100%;
+  height: auto;
+  margin-left: 10%;
+}
+
+.bishop-mummy-pix-names {
+  font-size: 80%;
+  text-align: center;
+}
+
+/* Styling the branches pages */
+.branch-name {
+  text-align: center;
+}
+
+/* Reduce the size of the enclosed items when website is being viewed on smaller screens */
+@media (max-width: 800px) {
+  h1 {
+    font-size: 150%;
+    color: #ff4c68;
+  }
+
+  h3 {
+    font-size: 120%;
+    color: #ff4c68;
+  }
+
+  h5 h6 {
+    font-size: 100%;
+  }
+
+  .about-paragraphs {
+    font-size: 120%;
+  }
+
+  .about-biography {
+    font-size: 105%;
+  }
+
+  /* Force the h3 of the testimony-header to stay black so as to stand out in background */
+  .testimony-header, .featured-message-header, .our-lead-pastors, .service-times {
+    color: #fff;
+  }
+
+  .featured-message {
+    width: 320px;
+    height: 220px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+
+}
+
+/* Styling for branch church pages */
+
+/* This page is under construction */
+.me{
+  height: 334px ;
+  margin: auto;
+  text-align: center;
+  background-color: gray ;
+}
+
+.under-construction{
+  margin: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 88rem;
+  color: #4ECCA3;
+}
+
+#carouselForBranchChurch  {
+  margin: auto;
+  width: 70% ;
+  height: auto;
+  text-align: center;
+
+}
+
+#carouselForBranchChurch .carousel-item {
+  padding-top: 2%;
+}
+
+li .thumbnails-carousel{
+  width: 20%
+  height: 50%;
+}
