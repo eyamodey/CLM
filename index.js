@@ -8,14 +8,28 @@ function changeTestifierText(screenSize){
   if (screenSize.matches){
     document.body.style.backgroundColor = "#8fdab0" ;
     document.querySelector("h4.one").innerHTML = "I used to have severe pains in my back which had defied all medical treatment. During one of our Sunday services, the servant of God Bishop Sylvanus Ofili, gave a word of knowledge on what I was passing through and declared divine healing upon my life. I believed God and He granted me healing.Hallelujah!" ;
-    document.querySelector("h4.two").innerHTML = "I had invited my younger sister who had been suffering from fibroid to one of our Liberation Night programme. Unknowingly to me, she had already begun contemplating suicide as a result of depression. During the ministeration, Rev. (Mrs) Ofili called her out by word of knowledge and prayed for her. She also had a successful fibroid operation.";
-    document.querySelector("h4.three").innerHTML = "One faithful day I had boarded a taxi occupied by robbers. After they dispossessed me of my money they handed me over to another group of men who dragged me into a nearby bush, stripped me naked and wanted to cut off my breasts. But God, through their leader, miraculously stopped them and eventually they let me go. Praise the Lord!";
+    document.querySelector("h4.two").innerHTML = "I invited my younger sister who was suffering from fibroid to one of our Liberation Night programme. Unknowingly to me, she had already begun contemplating suicide as a result of depression. During the ministeration, Rev. (Mrs) Ofili called her out by word of knowledge and prayed for her. She also had a successful fibroid operation.";
+    document.querySelector("h4.three").innerHTML = "One faithful day I boarded a taxi occupied by robbers. After they dispossessed me of my money they handed me over to another group of men who dragged me into a nearby bush, stripped me naked and wanted to cut off my breasts. But God, through their leader, miraculously stopped them and eventually they let me go. Praise God!";
     document.querySelector("h4.four").innerHTML = "One morning, while cooking, I had to hurriedly go out and I to forgot put to switch off my gas. I did not return home till late at night to discover that the food was bunrt black with the gas still on, but miraculously there was no fire outbreak. From the state of my kitchen I know this could only be by the finger of God. Praise the Lord!";
-    document.querySelector("h4.five").innerHTML = "My daughter suffered kidney failure and was eventually taken to specialist hospital Gwalagwalada where she started undergoing dialysis. Aside the financial burden, a lot of blood was needed and even the church members were not left out both in donating blood, visitation, and prayers. Today my daughter is totally healed. Praise be the Lord!";
-    document.querySelector("h4.six").innerHTML = "";
+    document.querySelector("h4.five").innerHTML = "My daughter suffered kidney failure and was taken to specialist hospital Gwalagwalada where she started undergoing dialysis. Aside the financial burden, a lot of blood was needed and even the church members were not left out both in donating blood, visitation, and prayers. Today my daughter is totally healed. Praise Jesus!";
+
   }
 }
 
 var screenSize = window.matchMedia("(max-width: 900px)") ;
 changeTestifierText(screenSize) ;
 screenSize.addListener(changeTestifierText) ;
+
+// Hide the testifier image when on mobile phone with screen size less than 600px
+
+function hideTestifierImage(screenSize){
+  if(screenSize.matches){
+    for (var i = 0; i < document.getElementsByClassName("testifier-image").length; i++) {
+      document.getElementsByClassName("testifier-image")[i].classList.add('d-none');
+    }
+  }
+}
+
+var phoneScreen = window.matchMedia("(max-width: 600px)") ;
+hideTestifierImage(phoneScreen) ;
+phoneScreen.addListener(hideTestifierImage) ;
