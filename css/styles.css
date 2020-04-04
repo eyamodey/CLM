@@ -30,6 +30,7 @@ p {
   font-weight: bold;
 }
 
+
 /* Constraining the navbar to a fixed height */
 /* .navbar{
   max-height: 55px ;
@@ -219,7 +220,7 @@ ul {
 
 #carouselForBranchChurch  {
   margin: auto;
-  width: 70% ;
+  width: 80% ;
   height: auto;
   text-align: center;
 
@@ -228,10 +229,13 @@ ul {
 #carouselForBranchChurch .carousel-item {
   padding-top: 2%;
 }
+#branchChurchCarousel li{
+  width: 100%;
+  height: auto;
+}
 
-li .thumbnails-carousel{
-  width: 20%;
-  height: 50%;
+#branchChurchCarousel ol{
+  margin-bottom: 0;
 }
 
 /* Audio messages page */

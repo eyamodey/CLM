@@ -8,13 +8,11 @@
   }
 
   h3 {
-    font-size: 200%;
+
     color: #ff4c68;
   }
 
-  h5, h6 {
-    font-size: 100%;
-  }
+
 
   .about-paragraphs {
     font-size: 120%;
@@ -42,28 +40,36 @@
     padding-left: 25%;
   }
 
-
-
-  .testimony-background-image{
-    max-width: 100%;
-    height: auto;
+  #carouselForBranchChurch  {
+    width: 100% ;
   }
-
 
 }
 
 
 /* Reduce the size of the enclosed items when website is being viewed on small screens like normal phones */
 @media (max-width: 600px){
-  .contact-us, .resources {
-    text-align: center;
-  }
 
   address {
     color: white;
   }
 
+  .church-name{
+    font-size: 4vw;
+    padding-left: 0;
+    color: #ff4c68;
+  }
+
+  .contact-us, .resources {
+    text-align: center;
+  }
+
+  .home-page-slide1, .home-page-slide2, .home-page-slide3 {
+    height: 250px;
+  }
+
   .resources{
     padding-left: 0;
   }
+
 }
