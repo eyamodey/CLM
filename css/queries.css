@@ -2,6 +2,9 @@
 
 /* Reduce the size of the enclosed items when website is being viewed on tablets and/or smaller screens */
 @media (max-width: 900px) {
+
+
+
   h1 {
     font-size: 250%;
     color: #ff4c68;
@@ -12,7 +15,9 @@
     color: #ff4c68;
   }
 
-
+  .home-page-slide1, .home-page-slide2, .home-page-slide3, .home-page-slide4 {
+    height: 320px;
+  }
 
   .about-paragraphs {
     font-size: 120%;
@@ -20,6 +25,14 @@
 
   .about-biography {
     font-size: 105%;
+  }
+
+  .bishop-mummy-pix {
+    margin-left: 0;
+  }
+
+  .leadPastors-pix{
+    text-align: center;
   }
 
   /* Force the h3 of the testimony-header to stay black so as to stand out in background */
@@ -57,19 +70,25 @@
   .church-name{
     font-size: 4vw;
     padding-left: 0;
-    color: #ff4c68;
   }
 
   .contact-us, .resources {
     text-align: center;
   }
 
-  .home-page-slide1, .home-page-slide2, .home-page-slide3 {
+  .home-page-slide1, .home-page-slide2, .home-page-slide3, .home-page-slide4 {
     height: 250px;
   }
 
   .resources{
     padding-left: 0;
+  }
+
+  .testimony-carousel em{
+    font-size: 90%;
+  }
+  h3{
+    font-size: 5vw;
   }
 
 }

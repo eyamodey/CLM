@@ -44,7 +44,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-5">
+      <ul class="navbar-nav ml-5 tabs">
         <li class="nav-item active home-tab">
           <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
         </li>
@@ -90,15 +90,15 @@
     <!-- Make slide show for year-theme and other pix -->
 
     <div id="YearThemeCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
+      <ol class="carousel-indicators homepage-carousel">
         <li data-target="#YearThemeCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#YearThemeCarousel" data-slide-to="1"></li>
         <li data-target="#YearThemeCarousel" data-slide-to="2"></li>
       </ol>
-      <div class="carousel-inner year-theme-carousel">
+      <div class="carousel-inner year-theme-carousel" role="listbox">
         <div class="carousel-item container-fluid home-page-slide1 active"></div>
         <div class="carousel-item container-fluid home-page-slide2"></div>
-        <div class="carousel-item container-fluid home-page-slide3"></div>
+        <div class="carousel-item container-fluid home-page-slide3" id="home-page-greeting"></div>
       </div>
     </div>
 
@@ -114,13 +114,13 @@
       <div class="row lead-pastors">
         <div class="col-lg-6 col-md-12">
           <img src="images/bishop.jpg" class="point-men-pix img-thumbnail rounded float-left" alt="Bishop Sylvanus Ofili">
-          <h6 class="names">Arcbishop Sylvanus Ofili</h6>
+          <h6 class="names">Archbishop Sylvanus Ofili</h6>
           <p class="biography">The founding President and General Overseer of Christian Liberation Ministry - a dynamic
             Ministry that is committed to total evangelization of the world with over twenty four branches across Nigeria.
             A Motivator and Conference speaker, Bishop Ofili holds a Diploma in Theology from Jubilee Bible College, Aba,
             Nigeria; a Degree in Theology from Vision International University, African Campus; and Doctorate Degree
             (Honourary) from Trinity College of Ministerial Arts (TRICOMA). He was commissioned and ordained as Minister of
-            the Gospel by the late Arch Bishop Benson Idahosa in 1995. Bishop Ofili is well known for his clear message of
+            the Gospel by the late Archbishop Benson Idahosa in 1995. Bishop Ofili is well known for his clear message of
             righteousness, and is widely regarded as a visionary leader and bridge-builder. His ability to transcend Race,
             Tribe, and Creed with his unique approach to ministry has seen to the forging of many strategic relationships
             between the church and local communities in Nigeria. He is the founder of Liberation Bible College.
@@ -133,7 +133,7 @@
             The First Lady and Co-Pastor of Christian Liberation Int'l Churches. She is the International President of
             Handmaids of God International (a non Denominational Women Outreach). She is also the Founder of Overcomers
             International school, which is committed to education and social reformation. Rev Roselyn has a burning passion
-            to see the empowerment of women in her generation, her nation, and her continent. A Mentor and Coach,
+            to see the empowerment of women in her generation, nation, and continent. A Mentor and Coach,
             Rev Roselyn is a greatly respected minister and conference speaker in much demand at home and abroad.
             She is well known for her unique gifts of healing, word of knowledge and discerning of spirits.
           </p>
@@ -186,7 +186,7 @@
             I dont feel the pain anymore since that day. I want to return all glory to God. Hallelujah!
           </h4>
 
-          <img class="testifier-image" src="images/testifier.jpg" alt="Deacon Fidelis">
+          <img class="testifier-image" src="images/testifier.png" alt="testifier one">
           <em>Deacon Fidelis, Suleja Branch</em>
         </div>
 
@@ -202,7 +202,7 @@
             To God be the Glory!
           </h4>
 
-          <img class="testifier-image" src="images/testifier.jpg" alt="Sis Ozioma">
+          <img class="testifier-image" src="images/testifier.png" alt="testifier two">
           <em>Sis Ozioma, Suleja Branch</em>
         </div>
 
@@ -217,7 +217,7 @@
             type they needed. The others were insisting that they still cut them off anyways but the leader was adamant
             and eventually they let me go. Praise the Lord!
           </h4>
-          <img class="testifier-image" src="images/ebere.jpg" alt="Mrs Ebere Christian">
+          <img class="testifier-image" src="images/testifier.png" alt="testifier three">
           <em>Mrs Ebere Christian, Jabi Branch</em>
         </div>
         <div class="carousel-item testimony-carousel">
@@ -231,7 +231,7 @@
             me in prayers for a successful journey. A lot of things happened in that journey but I want to return glory
             to God for success of the burial and safety back home.
           </h4>
-          <img class="testifier-image" src="images/favour.jpg" alt="Mrs Favour Chibuzor">
+          <img class="testifier-image" src="images/testifier.png" alt="testifier four">
           <em>Mrs Favour Chibuzor, Jabi Branch</em>
         </div>
         <div class="carousel-item testimony-carousel">
@@ -244,7 +244,7 @@
             healed from this terrible sickness, and I will like to appreciate the church for all the love and support given.
             Indeed by His stripes we are healed. Praise be the Lord!
           </h4>
-          <img class="testifier-image" src="images/testifier.jpg" alt="lady-profile">
+          <img class="testifier-image" src="images/testifier.png" alt="testifier five">
           <em>Mrs Esther Okon, Kubwa Branch</em>
         </div>
       </div>
@@ -277,13 +277,13 @@
         <div class="col-sm-12 col-md-6 col-lg-4 contact-us">
           <h4>Contact Us</h4>
           <address>
-            <a href="tel:+2348069168111"><i class="fas fa-phone-alt"></i> (+234) 080-691-681-11</a> <br>
+            <a href="tel:+2348034507310"><i class="fas fa-phone-alt"></i> (+234) 080-345-073-10</a> <br>
             <a href="mailto:messiah2007@yahoo.com"><i class="fas fa-envelope"></i> info@christianliberation.org</a> <br><br>
 
             Liberation Cathedral, <br>
             No. 1 Liberation Close, <br>
             Off Suleiman Barau Road, <br>
-            Suleja, Niger State. <br>
+            Suleja, Niger State, Nigeria. <br>
 
           </address>
         </div>
@@ -301,7 +301,7 @@
   </section>
 
   <footer id="footer">
-    <em>© 2020 Christian Liberation Int'l Churches. All rights reserved.</em>
+    <em id="copyrightInfo">set within the javascript file</em>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

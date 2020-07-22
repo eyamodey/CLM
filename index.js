@@ -42,8 +42,8 @@ function changeTestifierText2(screenSize) {
   document.body.style.backgroundColor = "#8fdab0";
   document.querySelector(".one").innerHTML = "God healed me of severe back pain through His servant, Bishop Sylvanus Ofili. Hallelujah!";
   document.querySelector(".two").innerHTML = "My younger sister was delivered from suicide spirit through the ministeration of Rev. (Mrs) Ofili.";
-  document.querySelector(".three").innerHTML = "God delivered me from one-chance robbers and ritualists. Praise the name of the Lord!";
-  document.querySelector(".four").innerHTML = "I want to return all glory to God for averting a domestic fire incidence at my residence. Praise the Lord!";
+  document.querySelector(".three").innerHTML = "I want to return all glory to God who delivered me from one-chance robbers and ritualists. Hallelujah!";
+  document.querySelector(".four").innerHTML = "I want to return all glory to God for averting a domestic fire incidence at my residence. Praise God!";
   document.querySelector(".five").innerHTML = "My daughter was healed of kidney failure through the financial and prayer support of the church.";
 }
 
@@ -81,4 +81,18 @@ function homePageCheck() {
       ;
     }
   }
+}
+
+// Automatically set the current year in the copyright section of footer
+const today = new Date();
+const siteOwner = "Christian Liberation Int'l Churches. All rights reserved." ;
+document.getElementById("copyrightInfo").innerHTML = "© " + today.getFullYear() + " Copyright: " + siteOwner ;
+
+// check what time it is so as to display appropraite greeting on home page
+const currentHour = today.getHours();
+if (currentHour < 12) {
+  document.getElementById("home-page-greeting").style.backgroundImage = "url('images/good-morning.png')";
+}
+if (currentHour > 16) {
+  document.getElementById("home-page-greeting").style.backgroundImage = "url('images/good-evening.png')";
 }

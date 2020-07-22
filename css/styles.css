@@ -19,6 +19,12 @@ hr{
   margin: 0 auto;
 }
 
+/* Make the div containing the Tabs in navbar to allign right */
+.tabs{
+  position: relative;
+  left: 280px;
+}
+
 /* Set text align for all paragraphs in ALL pages to JUSTIFY */
 p {
   text-align: justify;
@@ -40,6 +46,12 @@ p {
   background-color: black;
 }
 
+.carousel-indicators li{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
 .point-men-pix {
   max-width: 100%;
   height: auto;
@@ -49,27 +61,34 @@ p {
 /* Attach images to the home page carousel so they fill the whole carousel */
 
 .home-page-slide1 {
-  height: 550px;
-  background-image: url("../images/2020.png");
-  background-position: center;
+  height: 600px;
+  background-image: url("../images/home-page-slide 1.JPG");
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .home-page-slide2 {
-  height: 550px;
-  background-image: url("../images/home-page-slide 1.JPG");
+  height: 600px;
+  background-image: url("../images/home-page-slide 2.JPG");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .home-page-slide3 {
-  height: 550px;
-  background-image: url("../images/home-page-slide 2.JPG");
+  height: 600px;
+  background-image: url("../images/good-afternoon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* styling the greeting on the homepage slide2 */
+.homepage-greeting{
+  font-size: 150%;
+  color: #ff4c68;
+  text-align: center;
 }
 
 .container {
@@ -94,7 +113,7 @@ p {
 }
 
 /* Testimonials */
-#testimonials {
+#testimonials{
   padding-top: 3%;
   padding-left: 3%;
   padding-right: 3%;
@@ -218,6 +237,14 @@ ul {
   color: #4ECCA3;
 }
 
+#activities {
+  padding-left: 3%;
+  padding-right: 3%;
+  background-color: #ff4c68;
+  text-align: center;
+  color: #fff;
+}
+
 #carouselForBranchChurch  {
   margin: auto;
   width: 80% ;
@@ -230,7 +257,7 @@ ul {
   padding-top: 2%;
 }
 #branchChurchCarousel li{
-  width: 100%;
+  width: 10%;
   height: auto;
 }
 
