@@ -22,7 +22,7 @@ hr{
 /* Make the div containing the Tabs in navbar to allign right */
 .tabs{
   position: relative;
-  left: 280px;
+  left: 30%;
 }
 
 /* Set text align for all paragraphs in ALL pages to JUSTIFY */

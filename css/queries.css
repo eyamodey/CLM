@@ -67,6 +67,12 @@
     color: white;
   }
 
+  /* Make the div containing the Tabs in navbar to allign right */
+  .tabs{
+    position: relative;
+    left: 3%;
+  }
+
   .church-name{
     font-size: 4vw;
     padding-left: 0;
