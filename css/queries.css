@@ -97,4 +97,13 @@
     font-size: 5vw;
   }
 
+  #footer {
+    font-size: 50%;
+  }
+
+  .footer-image{
+    width: 20% ;
+    margin-top: 0.8rem ;
+  }
+
 }
